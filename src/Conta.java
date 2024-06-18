@@ -41,4 +41,9 @@ public abstract class Conta implements Iconta {
         return saldo;
     }
 
+    protected void imprimirInfoComuns() {
+        System.out.println(String.format("Agência %d", this.agencia));
+        System.out.println(String.format("Número conta %d", this.numeroConta));
+        System.out.println(String.format("Saldo R$ %.2f ", this.saldo));
+    }
 }
